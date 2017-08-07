@@ -33,6 +33,30 @@
   			});
   		});
   	});
+
+  	$(document).ready(function(){
+  		$(".gnb").find("li").each(function(i){
+  			$(this).mouseover(function(){
+  				$("#left_sub").show();
+  				$("#left_sub").find("div").eq(i).show();
+  			});
+  			$(this).mouseout(function(){
+  				$("#left_sub").hide();
+  				$("#left_sub").find("div").eq(i).hide();
+  			});
+  		});
+
+  		$("#left_sub").find("div").each(function(i){
+  			$(this).mouseover(function(){
+  				$("#left_sub").show();
+  				$("#left_sub").find("div").eq(i).show();
+  			});
+  			$(this).mouseout(function(){
+  				$("#left_sub").hide();
+  				$("#left_sub").find("div").eq(i).hide();
+  			});
+  		});
+  	});
   </script>
 </head>
 <body>
